@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="home-hero container">
+  <h1>Building in public — AI, code, and weeknotes</h1>
+  <p class="lede">A clean, minimalist blog — fast to publish, easy to read.</p>
+</section>
+
+<section class="container">
+  <ul class="post-list">
+    {% for article in articles_page.object_list %}
+      <li class="post-item">
+        <a href="{{ SITEURL }}/{{ article.url }}">
+          <h3>{{ article.title }}</h3>
+          <p class="meta">{{ article.date.strftime("%Y-%m-%d") }}
+            {% if article.tags %} · {{ article.tags | map(attribute='name') | join(', ') }}{% endif %}
+          </p>
+          {% if article.summary %}
+            <p class="summary">{{ article.summary | striptags }}</p>
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

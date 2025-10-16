@@ -1,0 +1,14 @@
+{% extends "!simple/article.html" %}
+{% block content %}
+<article class="container article">
+  <header class="article-header">
+    <h1>{{ article.title }}</h1>
+    <p class="meta">{{ article.date.strftime("%Y-%m-%d") }}
+      {% if article.tags %} · Tags: {{ article.tags | map(attribute='name') | join(', ') }}{% endif %}
+    </p>
+  </header>
+  <div class="article-body">
+    {{ article.content }}
+  </div>
+</article>
+{% endblock %}

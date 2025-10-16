@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          <title>Michael Boyle — AI Journey - Week 1 — Local LLMs: Ollama vs OpenAI SDK</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Michael Boyle — AI Journey Full Atom Feed" />
+        <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Michael Boyle — AI Journey Full RSS Feed" />
+        <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Michael Boyle — AI Journey Categories Atom Feed" />
+        <link href="/category/misc.xml" type="application/rss+xml" rel="alternate" title="Michael Boyle — AI Journey Categories RSS Feed" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/custom.css">
+
+  <meta name="description" content="Notes, builds, and reflections from my AI engineering journey.">
+  <meta property="og:title" content="Michael Boyle — AI Journey">
+  <meta property="og:description" content="Notes, builds, and reflections from my AI engineering journey.">
+
+
+
+
+    <meta name="tags" content="LLMs" />
+    <meta name="tags" content="SDK" />
+    <meta name="tags" content="Python" />
+
+  </head>
+
+  <body>
+    <header>
+      <hgroup><h1><a href="/">Michael Boyle — AI Journey</a></h1></hgroup>
+      <nav><ul>
+            <li><a href="/about/" >About</a></li>
+            <li><a href="/category/misc.html"  aria-current="page" >misc</a></li>
+      </ul></nav>
+    </header>
+    <main>
+<article class="container article">
+  <header class="article-header">
+    <h1>Week 1 — Local LLMs: Ollama vs OpenAI SDK</h1>
+    <p class="meta">2025-10-16
+ · Tags: LLMs, SDK, Python    </p>
+  </header>
+  <div class="article-body">
+    <p>Goal: talk to a local model (Ollama) <em>and</em> a hosted model using one OpenAI-style client.</p>
+<p><strong>What worked</strong>
+- Keep prompts tiny and specific
+- Match temperature/top_p for fairness
+- Log token counts, not vibes</p>
+<p><strong>Snippet</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:11434/v1&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;ollama&quot;</span><span class="p">)</span>
+<span class="n">resp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama3.2&quot;</span><span class="p">,</span>
+    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="s2">&quot;3 bullets on what I learned today&quot;</span><span class="p">}],</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+  </div>
+</article>
+    </main>
+    <footer>
+      <address>
+        Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+        which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+      </address>
+    </footer>
+  </body>
+</html>

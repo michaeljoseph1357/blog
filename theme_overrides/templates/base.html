@@ -1,0 +1,43 @@
+{% extends "!simple/base.html" %}
+
+{% block head %}
+  {{ super() }}
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  {% if CUSTOM_CSS %}
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ CUSTOM_CSS }}">
+  {% endif %}
+
+  <meta name="description" content="Notes, builds, and reflections from my AI engineering journey.">
+  <meta property="og:title" content="{{ SITENAME }}">
+  <meta property="og:description" content="Notes, builds, and reflections from my AI engineering journey.">
+{% endblock %}
+
+{% block header %}
+<header class="mb-site-header">
+  <div class="container">
+    <a href="{{ SITEURL }}/" class="brand">{{ AUTHOR }}</a>
+    <nav>
+      <a href="{{ SITEURL }}/blog/">Blog</a>
+      <a href="{{ SITEURL }}/about/">About</a>
+    </nav>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<div class="container page-body">
+  {{ super() }}
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="mb-site-footer">
+  <div class="container">
+    <p>© {{ now().year }} {{ AUTHOR }} — Built with Pelican</p>
+  </div>
+</footer>
+{% endblock %}
