@@ -4,7 +4,7 @@ from pelicanconf import *
 
 
 
-SITEURL = "michaelboyle.netlify.app"  # <-- change to your domain
+SITEURL = "https://michaelboyle-ai.netlify.app" # <-- change to your domain
 RELATIVE_URLS = False
 FEED_ALL_RSS = "rss.xml"
 DELETE_OUTPUT_DIRECTORY = True
