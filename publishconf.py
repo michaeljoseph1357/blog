@@ -1,10 +1,13 @@
+# --- make sure we can import pelicanconf no matter the CWD ---
 import os, sys
-sys.path.insert(0, os.path.dirname(__file__))  # ensure we can import pelicanconf
+BASE_DIR = os.path.dirname(__file__)
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
+# import all dev settings
 from pelicanconf import *
 
-
-
-SITEURL = "https://michaelboyle-ai.netlify.app" # <-- change to your domain
+# ---- production overrides ----
+SITEURL = "https://michaelboyle-ai.netlify.app"
 RELATIVE_URLS = False
-FEED_ALL_RSS = "rss.xml"
 DELETE_OUTPUT_DIRECTORY = True
