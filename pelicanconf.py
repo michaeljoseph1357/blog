@@ -1,7 +1,7 @@
 AUTHOR = "Michael Boyle"
 SITENAME = "Michael Boyle — AI Journey"
 SITEURL = ""                     # ← empty for dev
-RELATIVE_URLS = True             # ← relative links in dev
+RELATIVE_URLS = False             # ← relative links in dev
 
 PATH = "content"
 TIMEZONE = "Europe/London"
