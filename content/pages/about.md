@@ -1,5 +1,5 @@
-Title: Why I Started Learning AI During Paternity Leave
-Date: 2025-10-17
+Title: Who am I?
+Date: 2025-10-19
 Category: Reflections
 Tags: AI, learning, paternity, technology, career
 Slug: about
