@@ -3,7 +3,7 @@ Date: 2025-10-19
 Category: AI
 Tags: AI, learning, paternity leave
 Slug: why-im-learning-ai
-Summary: Starting a blog to document my AI learning journey during paternity leave
+Summary: Starting a blog to document my AI learning journey
 
 I'm one month into a six-month paternity leave. It's been wonderful so far. My son Ollie has arrived into a rapidly changing world; he's loved and safe but who knows what is in store for his generation. Frankly, who knows what is in store for mine. I continue to be blown away by the power of AI, ChatGPT alone has transformed how I approach problems, plan holidays, process my thoughts. I know it's not all positive, indeed I've found myself lost in the app at times when I should be present at home with my wife, and now my son. It's easy to distract myself with this technology, designed to lure me in with its over the top positive reinforcement and responses tailored to my specific taste.
 
