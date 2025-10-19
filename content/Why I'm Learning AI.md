@@ -1,4 +1,4 @@
-Title: Why I'm Learning AI as a Finance Professional
+Title: Why I'm Learning AI during Paternity Leave
 Date: 2025-10-19
 Category: AI
 Tags: AI, learning, paternity leave
@@ -13,6 +13,6 @@ When I asked ChatGPT for an honest assessment of myself, it was brutally accurat
 
 My point is, ChatGPT diagnosed this problem I had. An inability to stick to one hobby because none of them have given me the necessary positive reinforcement required to motivate me to carry on consistently. So, what is the solution?
 
-Aside from being a present husband and dad, during the remainder of my paternity leave I'll pick one hobby seriously and blog about it – Artificial Intelligence. This holds me accountable, gives me tangible output and gives me something to do in the hours between nappy changes and prams.
+Aside from being a present husband and dad, during the remainder of my paternity leave I'll pick one hobby seriously and blog about it – Artificial Intelligence. This holds me accountable, gives me tangible output and gives me something to do in the hours between nappy changes and bottle feeds.
 
-So I started this blog about my AI learning journey. This technology that is set to transform our lives, especially Ollie's. My goal is not to become an LLM engineer, or publish a world-beating agentic application, no, I'm just looking to understand the technology and apply it in interesting ways. It's certainly set to disrupt the consulting and client services industry, so perhaps I can become a subject matter expert at work and help answer colleagues or clients' questions. This blog is my commitment: one post per week about what I'm learning, building, and trying with AI. For the next six months, I'm going to actually finish something. Starting now.
+This technology that is set to transform our lives, especially Ollie's. My goal is not to become an LLM engineer, or publish a world-beating agentic application, no, I'm just looking to understand the technology and apply it in interesting ways. It's certainly set to disrupt the consulting and client services industry, so perhaps I can become a subject matter expert at work and help answer colleagues or clients' questions. This blog is my commitment: one post per week about what I'm learning, building, and trying with AI. Starting now.
